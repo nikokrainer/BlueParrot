@@ -250,12 +250,12 @@
   background-color: #1B1B1C;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .section3 {
   width: 80%;
   margin: auto;
-  position: relative;
   color: white;
 }
 
@@ -276,7 +276,7 @@
 .s3header-div h1 {
   margin-top: 11rem;
   font-size: 4.5rem;
-  width: 77rem;
+  max-width: 77rem;
   text-align: center;
 }
 
@@ -313,20 +313,27 @@
 }
 
 .pre-footer {
-  width: 1241px;
+  max-width: 1241px;
   margin: auto;
 }
 
 .nav-container {
-  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   margin-top: 4.5rem;
   font-family: 'Helvetica Now Display';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .nav-container h3 {
@@ -335,7 +342,9 @@
 }
 
 .nav-container .services-names {
-  width: 30rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-top: 3.5rem;
   font-family: 'Helvetica Now Display';
 }
@@ -374,7 +383,9 @@
 }
 
 .nav-container .office {
-  width: 30rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-family: 'Helvetica Now Display';
 }
 
@@ -405,7 +416,9 @@
 }
 
 .nav-container .contact-us {
-  width: 30rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .nav-container .contact-us .contact-names {
@@ -442,7 +455,9 @@
 
 .nav-container .follow-us {
   position: relative;
-  width: 25rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .nav-container .follow-us .icons {
